@@ -1,0 +1,141 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Слайдер */
+.slick-slider {
+    position: relative;
+}
+
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+}
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    width: 1400px;
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+}
+
+/* Слайд */
+.slick-slide {
+    margin-right: 190px;
+}
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active .solution-product-img {
+    animation: sliderImg 1000ms ease;
+}
+
+@keyframes sliderImg {
+    0% {
+        width: 200px;
+    }
+    100% {
+        width: 486px;
+    }
+}
+
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+
+/* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+
+/* Стрелка */
+.slick-arrow {
+    position: absolute;
+    z-index: 10;
+    font-size: 0;
+    width: 18px;
+    height: 14px;
+    cursor: pointer;
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+    background: url("../images/arrows/prev.png");
+    background-size: cover;
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+    background: url("../images/arrows/next.png");
+    background-size: cover;
+}
+
+#strategic-solution .slick-arrow.slick-next, #cyber-solution .slick-arrow.slick-next, #homeland-solution .slick-arrow.slick-next {
+    bottom: -3px;
+    right: calc(50% - 115px);
+}
+
+#strategic-solution .slick-arrow.slick-prev, #cyber-solution .slick-arrow.slick-prev, #homeland-solution .slick-arrow.slick-prev {
+    bottom: -3px;
+    left: calc(50% - 115px);
+}
+#tactical-solution .slick-arrow.slick-next{
+    bottom: -3px;
+    right: calc(50% - 85px);
+}
+#tactical-solution .slick-arrow.slick-prev{
+    bottom: -3px;
+    left: calc(50% - 85px);
+}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+    opacity: 0.2;
+}
+
+/* Точки (булиты) */
+.slick-dots {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-dots li {
+    list-style: none;
+    outline: none;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active {
+    outline: none;
+}
+
+.slick-dots li.slick-active button {
+    background: #00d38a;
+    transform: scale(1.2);
+    outline: none;
+}
+
+/* Элемент точки */
+.slick-dots li button {
+    font-size: 0;
+    width: 35px;
+    height: 2px;
+    margin: 0 10px;
+    background: #ababab;
+    transition: all 0.5s ease;
+    outline: none;
+}

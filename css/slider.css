@@ -1,0 +1,61 @@
+.slider-arrows {
+    display: flex;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.swiper-pagination {
+    position: relative;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.swiper .swiper-pagination-bullet {
+    height: 2px;
+
+    width: 35px;
+    background: #1D1D1B;
+    border-radius: 0;
+    transition: all 0.5s ease;
+    display: block;
+}
+
+.swiper .swiper-pagination-bullet-active {
+    background: #00d38a;
+    transform: scale(1.2);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 15px 5px;
+}
+
+.swiper-slide {
+
+}
+
+
+.swiper-slide-active .solution-product-img {
+animation: sliderImg 1s ease;
+}
+
+@keyframes sliderImg {
+    0% {
+        width: 200px;
+    }
+    100% {
+        width: 486px;
+    }
+}
